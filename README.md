@@ -1,94 +1,26 @@
 ## FightCamp take home (iOS) 🥊
 
+## Summary
+
+#### Initial approach
+After reading through the overview of this assignment, my initial thought towards building the product page was to use a UITableViewController to display each package. Each UITableViewCell would represent a single package, and to get the thumbnails to be interactable and displayed next to each other I thought that using a UICollectionView would be very fitting. While I was able to get all of the subviews to show up in each table view cell, I ran into a few major issues: 
+
+* For the scope of this project, the number of files I created were a tad much
+* The custom table view cell class was getting too "bloated" with multiple subviews and custom/delegate methods
+* Each package in the table view controller was of different sizes, despite wrestling with multiple approaches to manipulate the cell constraints. 
+
+Eventually I decided to scrap the use of cells and the table view controller to work with another approach: using a UIScrollView, which the table view controller subclasses from. In deciding to work with a scroll view, I believed that I would have an easier time working with constraints. 
+
+#### Final approach
+Using a scroll view helped me achieve Goal 1, which was to get the first package to display nicely on the screen. 
+
+For the interactive thumbnails: I decided to go with a lighter approach by creating a stack view of UIButtons, and to get the buttons to display the thumbnails I created a helper method that fetches an image based on the current image link and sets a button's image property to it. I also did something similar for the big thumbnail image. To get the thumbnail image to show correctly based on a selected thumbnail, I used a UIButton-based variable that stores the selected button. 
+
+For the included and excluded items: I created a helper method that works with NSMutableAttributedStrings to turn both of their strings into the unique body text as shown in the criteria. I eventually extended most of this process to creating the bottom label that displays the payment details. 
+
+To get each subview to display correctly: I called the data fetching method from the ViewModel class in the PackagesViewController, which would allow me to configure each package via the PackageView class.  
+
+#### Keeping code as clean and readable as possible
+I created helper methods for repeated processes and added comments and pragma marks that indicate the tasks for each section. For helper methods that leverage a specific UI component like UIImageView, UILabel, or UIButton, I stored them into helper files (see Labels.swift and Images.swift). 
+
 Hey! Congratulations on making it to the next step in the interview process. We look forward to having you potentially join the FightCamp family!
-
-## Expectations
-
-Replicate the FightCamp package selection (webpage) into a native iOS App using Swift and UIKit. See the image below as a reference:
-
-![](img/mockups-01.png)
-
-![](img/package-animation-01.gif)
-
-## Goals 
-
-There are 3 packages available:
-
-- FightCamp Personal
-- FightCamp Tribe
-- FightCamp Connect
-
-#### Goal level 1
-Only one package (1/3) is displayed on the screen. 
-
-In this case, we should be able to easily change the code so we can test another package.
-
-#### Goal level 2
-
-Have the thumbnails section interactive; possibility to change the preview image by tapping on one of the 4 thumbnails.
-
-#### Goal level 3
-Every package (3/3) are displayed on the screen and embedded into a vertical scroll view (UIScrollView, UITableView or UICollectionView). It's possible to look at each of 3 packages by scrolling up/down.
-
-## Requirements
-
-- Must compile
-- Swift (no Obj-c)
-- UIKit (not ready to SwiftUI yet!)
-- No storyboard or nibs - everything programmatically (Autolayout or frame)
-- We recommend MVVM achitecture (even considering the small size of the app)
-- Light & dark mode compatible
-- No third party libraries
-- iPad layout isn't supported
-- Support iPhones with a screen equal or greater to 4.7in
-- The UI isn't hardcoded; `packages.json` is used to populate the UI
-
-## Project Submission
-
-Fork this repository to get access to the configured XCode project and the helper files.
-
-Try to accomplish as many goal levels as you can.
-
-Create a small README with the following items:
-
-* Small summary of the reasoning behind your technical decisions.
-* What is missing and why. (if applicable)
-* Any other information you believe is necessary for us to know about the issue/solution.
-
-Once completed, email us a Zipped version of your Xcode project with all source files.
-
-## Time allotment 
-
-It should take aproximately 2-3 hours to complete **Goal level 1**. 
-
-An additional work hour can be expected in order to complete **Goal level 2 & 3**.
-
-A maximum of 24 hours is given to the candidate to submit the zipped project. 
-
-## Evaluation
-
-| Criteria | |
-|:--|:--|
-Readability of the code (easy to read, easy to navigate, well structured)  | ++++
-UI is performant and similar to the given example | ++++
-Respect of the architecture (e.g. UI separation from the model) | +++
-Simplicity of the solutions used | +++
-Use of the Swift functionalities | +++
-Formatting of the code and code comments | ++
-
-## Helper Files
-
-| Files    | Description    |
-|:-----|:------|
-|`Colors.swift`| Contains all needed UIColor
-|`Fonts.swift` | Contains all UIFonts needed to style the labels
-| `Layout.swift` | Contains all CGFloat layout dimensions
-| `packages.json` | Contains the FightCamp packages metadata (json format)
-
-## Layout reference
-
-Refer to this image below to build the UI
-
-![](./img/specs-01.png)
-
-
