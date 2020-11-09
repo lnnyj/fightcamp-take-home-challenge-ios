@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09962ED7255923B0003F20AA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 09962ED6255923B0003F20AA /* README.md */; };
 		09DD0A3B255799A400127494 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A3A255799A400127494 /* Images.swift */; };
 		09DD0A3D2558A26E00127494 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A3C2558A26E00127494 /* Labels.swift */; };
 		09DD0A422558FB4D00127494 /* PackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A402558FB4D00127494 /* PackagesViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09962ED6255923B0003F20AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		09DD0A3A255799A400127494 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		09DD0A3C2558A26E00127494 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		09DD0A402558FB4D00127494 /* PackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		C1BD9778249AC04D0044B734 /* FightCamp-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				09962ED6255923B0003F20AA /* README.md */,
 				C1BD9779249AC04D0044B734 /* AppDelegate.swift */,
 				C1BD977B249AC04D0044B734 /* SceneDelegate.swift */,
 				09DD0A402558FB4D00127494 /* PackagesViewController.swift */,
@@ -201,6 +204,7 @@
 				C1BD9793249AC3620044B734 /* packages.json in Resources */,
 				09DD0A432558FB4D00127494 /* PackagesViewController.xib in Resources */,
 				C1BD9783249AC04E0044B734 /* Assets.xcassets in Resources */,
+				09962ED7255923B0003F20AA /* README.md in Resources */,
 				C1BD979E249AFFCC0044B734 /* Font-2.otf in Resources */,
 				C1BD979F249AFFCC0044B734 /* Font-3.otf in Resources */,
 				C1BD97A0249AFFCC0044B734 /* Font-1.otf in Resources */,
