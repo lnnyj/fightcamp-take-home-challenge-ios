@@ -22,5 +22,3 @@ To get each subview to display correctly: I called the data fetching method from
 
 #### Keeping code as clean and readable as possible
 I created helper methods for repeated processes and added comments and pragma marks that indicate the tasks for each section. For helper methods that leverage a specific UI component like UIImageView, UILabel, or UIButton, I stored them into helper files (see Labels.swift and Images.swift). 
-
-Hey! Congratulations on making it to the next step in the interview process. We look forward to having you potentially join the FightCamp family!
