@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09DD0A3B255799A400127494 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A3A255799A400127494 /* Images.swift */; };
+		09DD0A3D2558A26E00127494 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A3C2558A26E00127494 /* Labels.swift */; };
+		09DD0A422558FB4D00127494 /* PackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A402558FB4D00127494 /* PackagesViewController.swift */; };
+		09DD0A432558FB4D00127494 /* PackagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DD0A412558FB4D00127494 /* PackagesViewController.xib */; };
+		09DD0A452558FC0000127494 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A442558FBFF00127494 /* Package.swift */; };
+		09DD0A472558FC7700127494 /* PackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A462558FC7700127494 /* PackageViewModel.swift */; };
+		09DD0A492558FD3000127494 /* PackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD0A482558FD3000127494 /* PackageView.swift */; };
 		C1BD977A249AC04D0044B734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD9779249AC04D0044B734 /* AppDelegate.swift */; };
 		C1BD977C249AC04D0044B734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD977B249AC04D0044B734 /* SceneDelegate.swift */; };
 		C1BD9783249AC04E0044B734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BD9782249AC04E0044B734 /* Assets.xcassets */; };
@@ -20,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09DD0A3A255799A400127494 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		09DD0A3C2558A26E00127494 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		09DD0A402558FB4D00127494 /* PackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesViewController.swift; sourceTree = "<group>"; };
+		09DD0A412558FB4D00127494 /* PackagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackagesViewController.xib; sourceTree = "<group>"; };
+		09DD0A442558FBFF00127494 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		09DD0A462558FC7700127494 /* PackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewModel.swift; sourceTree = "<group>"; };
+		09DD0A482558FD3000127494 /* PackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageView.swift; sourceTree = "<group>"; };
 		C1BD9776249AC04D0044B734 /* FC-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FC-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BD9779249AC04D0044B734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1BD977B249AC04D0044B734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +59,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091C852625566DFB00D7010C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09DD0A442558FBFF00127494 /* Package.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		091C852725566E0400D7010C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09DD0A462558FC7700127494 /* PackageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		091C852825566E1F00D7010C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09DD0A482558FD3000127494 /* PackageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C1BD976D249AC04D0044B734 = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +102,18 @@
 		C1BD9778249AC04D0044B734 /* FightCamp-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				C1BD9779249AC04D0044B734 /* AppDelegate.swift */,
+				C1BD977B249AC04D0044B734 /* SceneDelegate.swift */,
+				09DD0A402558FB4D00127494 /* PackagesViewController.swift */,
+				09DD0A412558FB4D00127494 /* PackagesViewController.xib */,
+				091C852625566DFB00D7010C /* Model */,
+				091C852825566E1F00D7010C /* View */,
+				091C852725566E0400D7010C /* ViewModel */,
 				C1FD02AB249B23E10029487C /* Helpers */,
 				C1BD979A249AFF0C0044B734 /* Assets */,
-				C1BD9779249AC04D0044B734 /* AppDelegate.swift */,
-				C1BD9792249AC3620044B734 /* packages.json */,
-				C1BD977B249AC04D0044B734 /* SceneDelegate.swift */,
-				C1BD9787249AC04E0044B734 /* Info.plist */,
 				C1BD9782249AC04E0044B734 /* Assets.xcassets */,
+				C1BD9792249AC3620044B734 /* packages.json */,
+				C1BD9787249AC04E0044B734 /* Info.plist */,
 			);
 			path = "FightCamp-Homework";
 			sourceTree = "<group>";
@@ -88,8 +131,10 @@
 		C1FD02AB249B23E10029487C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C1BD978E249AC0790044B734 /* Colors.swift */,
+				09DD0A3C2558A26E00127494 /* Labels.swift */,
+				09DD0A3A255799A400127494 /* Images.swift */,
 				C1BD9790249AC0810044B734 /* Fonts.swift */,
+				C1BD978E249AC0790044B734 /* Colors.swift */,
 				C1FD02AC249B23F30029487C /* Layout.swift */,
 			);
 			path = Helpers;
@@ -154,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1BD9793249AC3620044B734 /* packages.json in Resources */,
+				09DD0A432558FB4D00127494 /* PackagesViewController.xib in Resources */,
 				C1BD9783249AC04E0044B734 /* Assets.xcassets in Resources */,
 				C1BD979E249AFFCC0044B734 /* Font-2.otf in Resources */,
 				C1BD979F249AFFCC0044B734 /* Font-3.otf in Resources */,
@@ -168,9 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09DD0A452558FC0000127494 /* Package.swift in Sources */,
 				C1BD9791249AC0810044B734 /* Fonts.swift in Sources */,
+				09DD0A422558FB4D00127494 /* PackagesViewController.swift in Sources */,
 				C1BD978F249AC0790044B734 /* Colors.swift in Sources */,
+				09DD0A472558FC7700127494 /* PackageViewModel.swift in Sources */,
+				09DD0A3B255799A400127494 /* Images.swift in Sources */,
 				C1FD02AD249B23F30029487C /* Layout.swift in Sources */,
+				09DD0A492558FD3000127494 /* PackageView.swift in Sources */,
+				09DD0A3D2558A26E00127494 /* Labels.swift in Sources */,
 				C1BD977A249AC04D0044B734 /* AppDelegate.swift in Sources */,
 				C1BD977C249AC04D0044B734 /* SceneDelegate.swift in Sources */,
 			);
